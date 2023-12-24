@@ -1,36 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500&family=Press+Start+2P&family=Roboto:wght@400;700&family=Ubuntu:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-  background-color: rgba(255, 255, 255, 0.777);
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2vw;
+  width: 100%;
   height: 5vh;
-  padding: 10px 22px;
-}
-.navbar .logo img {
-  height: 20px;
-}
-.navbar ul {
-  display: flex;
-  list-style: none;
-}
-.navbar ul li {
-  margin-left: 40px;
-  font-size: 12px;  
-}
-.navbar .nav-icons img {
-  height: 20px;
-  margin-left: 20px;
-  vertical-align: middle;
+  background-color: rgba(250, 250, 250, 0.777);
 }
 
-.back-video video{
-  width: 100%;
+nav a {
+  text-decoration:none;
+  color: rgb(0, 0, 0);
 }

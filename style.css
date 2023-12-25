@@ -1,19 +1,27 @@
+@font-face {
+  font-family: FontRegular;
+  src: url(assets/fonts/sf-pro-display_regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
+  font-family: FontRegular;
+} 
 html, body {
   height: 100%;
   width: 100%;
 }
 
-.main {
+main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
+
+
+/*____________________*/
 nav {
   display: flex;
   align-items: center;
@@ -21,10 +29,74 @@ nav {
   gap: 2vw;
   width: 100%;
   height: 5vh;
-  background-color: rgba(250, 250, 250, 0.777);
+  background-color: whitesmoke;
 }
 
 nav a {
   text-decoration:none;
   color: rgb(0, 0, 0);
 }
+
+nav i {
+  font-size: 1.17vw;
+}
+
+.part-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 75vh;
+  background-image: url(/assets/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg);
+  background-position: center;
+  margin-bottom: 1vh;
+}
+/*____________________*/
+
+
+
+/*____________________*/
+.text-part-1 {
+  top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  gap: 1vh;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5vh;
+}
+.text-part-1 h1 {
+  font-size: 3vw;
+}
+.text-part-1 p {
+  font-size: 1.6vw;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  font-size: 1.2vw;
+}
+.link a {
+  text-decoration: none;
+  color: rgba(63, 169, 255, 0.767);
+}
+.link a:hover {
+  border-bottom: 1px solid rgba(63, 169, 255, 0.767);
+}
+/*____________________*/
+
+
+
+/*____________________*/
+.part-2 {
+  background-image: url(assets/hero_iphone15_announce__uuemlcwczn6u_largetall.jpg);
+}
+.text-part-2 {
+  color:rgb(0, 0, 0);
+}
+/*____________________*/

@@ -25,56 +25,57 @@ let menu = document.querySelector(".ri-menu-fill");
 let close = document.querySelector(".ri-close-fill");
 let respoNav = document.querySelector(".respo-nav");
 
-menu.addEventListener('click', () => {
-  respoNav.style.top = "0%";
-})
-close.addEventListener('click', () => {
-  respoNav.style.top = "-100%";
-})
+  menu.addEventListener('click', () => {
+    respoNav.style.top = "0%";
+  })
+  close.addEventListener('click', () => {
+    respoNav.style.top = "-100%";
+  })
 
 
-const thongtin = document.querySelectorAll('.main .thongtin .thongtinbottom');
-const thongtintop = document.querySelectorAll('.main .top .thongtintop');
+
+const infoBottom = document.querySelectorAll('.main .info .info-bottom');
+const infoTop = document.querySelectorAll('.main .top .info-top');
 
 let activeScreen;
-thongtintop.forEach(element =>{
+infoTop.forEach(element =>{
     element.addEventListener('mouseover', ()=>{
-        thongtin.forEach((element) => {
+        infoBottom.forEach((element) => {
             element.style.display = 'none';
         })
-        if(element == thongtintop[0]){
-            thongtin[0].style.display ='grid';
-            activeScreen = thongtin[0];
+        if(element == infoTop[0]){
+            infoBottom[0].style.display ='grid';
+            activeScreen = infoBottom[0];
         }
-        else if (element == thongtintop[1]) {
-            thongtin[1].style.display ='grid';
-            activeScreen = thongtin[1];
+        else if (element == infoTop[1]) {
+            infoBottom[1].style.display ='grid';
+            activeScreen = infoBottom[1];
         }
         return activeScreen;
     })
 })
 
 
-thongtin.forEach(element =>{
+infoBottom.forEach(element =>{
   element.addEventListener('mouseover', ()=>{
-      if(element == thongtin[0]){
-          thongtin[0].style.display ='grid';
+      if(element == infoBottom[0]){
+          infoBottom[0].style.display ='grid';
           activeScreen = element;
       }
-      else if (element == thongtin[1]) {
-          thongtin[1].style.display ='grid';
+      else if (element == infoBottom[1]) {
+          infoBottom[1].style.display ='grid';
           activeScreen = element;
       }
   })
 })
 
-thongtin.forEach(element =>{
+infoBottom.forEach(element =>{
   element.addEventListener('mouseout', ()=>{
-      if(element == thongtin[0]){
-          thongtin[0].style.display ='none';
+      if(element == infoBottom[0]){
+          infoBottom[0].style.display ='none';
       }
-      else if (element == thongtin[1]) {
-          thongtin[1].style.display ='none';
+      else if (element == infoBottom[1]) {
+          infoBottom[1].style.display ='none';
       }
   })
 })

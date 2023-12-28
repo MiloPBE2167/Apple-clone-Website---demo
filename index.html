@@ -4,13 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="style.css">
   <title>Apple Clone Website</title>
 </head>
 <body>
   <div class="main">
-    <nav>
+    <nav class="top">
       <i class="ri-apple-fill"></i>
+      <a id="store" href="" class="thongtintop">Store</a>
+      <a href="" class="thongtintop">Mac</a>
+      <a href="" class="thongtintop">iPad</a>
+      <a href="" class="thongtintop">Iphone</a>
+      <a href="" class="thongtintop">Watch</a>
+      <a href="" class="thongtintop">Vision</a>
+      <a href="" class="thongtintop">AirPods</a>
+      <a href="" class="thongtintop">TV & Home</a>
+      <a href="" class="thongtintop">Entertainment</a>
+      <a href="" class="thongtintop">Accessories</a>
+      <a href="" class="thongtintop">Support</a>
+      <i class="ri-search-line"></i>
+      <i class="ri-shopping-bag-line"></i>
+      <i class="ri-menu-fill"></i>
+    </nav>
+
+    <div class="respo-nav">
+      <svg class="ri-close-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z" fill="rgba(255,255,255,1)"></path></svg>
       <a href="">Store</a>
       <a href="">Mac</a>
       <a href="">iPad</a>
@@ -22,12 +41,70 @@
       <a href="">Entertainment</a>
       <a href="">Accessories</a>
       <a href="">Support</a>
-      <i class="ri-search-line"></i>
-      <i class="ri-shopping-bag-line"></i>
-    </nav>
+    </div>
 
-    <div class="main-product part-1">
-      <div class="text-main-product text-part-1">
+    <div class="thongtin">
+      <div class="thongtinbottom" id="a">
+        <div class="column1">
+            <h4>Mua Hàng</h4>
+            <h1>Mua Sản Phẩm Mới Nhất</h1>
+            <h1>Mac</h1>
+            <h1>iPad</h2>
+            <h1>iPhone</h1>
+            <h1>Apple Watch</h1>
+            <h1>Phụ Kiện</h2>
+        </div>
+        <div class="column2">
+            <h4>Liên Kết Nhanh</h4>
+            <h2>Mua Sắm Quà Tặng Ngày Lễ</h2>
+            <h2>Tình Trạng Đơn Hàng</h2>
+            <h2>Apple Trade In</h2>
+            <h2>Tài Chính</h2>
+        </div>
+        <div class="column3">
+            <h4>Mua Tại Cửa Hàng Đặc Biệt</h4>
+            <h3>Giáo Dục</h3>
+            <h3>Doanh Nghiệp</h3>
+        </div>
+      </div>
+    
+      <div class="thongtinbottom" id="b">
+          <div class="column1">
+              <h4>Khám Phá Mac</h4>
+              <h1>Khám Phá Tất Cả Mac</h1>
+              <h1>MacBook Air</h1>
+              <h1>MacBook Pro</h2>
+              <h1>iMac</h1>
+              <h1>Mac mini</h1>
+              <h1>Mac Studio</h2>
+              <h1>Mac Pro</h1>
+              <h1>Màn Hình</h2>
+              <h4>So Sánh Mac</h4>
+              <h4>Mac Làm Được Đó</h4>
+          </div>
+          <div class="column2">
+              <h4>Mua Mac</h4>
+              <h2>Mua Mac</h2>
+              <h2>Phụ Kiện Mac</h2>
+              <h2>Apple Trade In</h2>
+              <h2>Tài Chính</h2>
+          </div>
+          <div class="column3">
+              <h4>Tìm Hiểu Thêm Về Mac</h4>
+              <h3>Hỗ Trợ Mac</h3>
+              <h3>AppleCare+ cho Mac</h3>
+              <h3>macOS Sonoma</h3>
+              <h3>Các Ứng Dụng Của Apple</h3>
+              <h3>Tính Liên Tục</h3>
+              <h3>iCloud+</h3>
+              <h3>Mac Cho Doanh Nghiệp</h3>
+              <h3>Giáo Dục</h3>
+          </div>
+        </div>
+    </div>
+
+    <div id="partO" class="part-1">
+      <div class="text-part-1">
         <h1>iPhone 15 Pro</h1>
         <p>Titanium. So Strong. So Light. So Pro.</p>
         <div class="link">
@@ -36,9 +113,9 @@
         </div>
       </div>
     </div>
-    
-    <div class="main-product part-2">
-      <div class="text-main-product text-part-2">
+
+    <div class="part-1 part-2">
+      <div class="text-part-1 text-part-2">
         <h1>iPhone 15</h1>
         <p>New camera. New design. Newphoria.</p>
         <div class="link">
@@ -47,8 +124,74 @@
         </div>
       </div>
     </div>
-  </div>
 
+    <div class="part-4">
+      <div class="part-1 part-4-1">
+        <div class="text-part-1 text-part-3">
+          <h1>Mac Pro</h1>
+          <p>Mind-blowing. Head-turning.</p>
+          <div class="link">
+            <a href="https://www.apple.com/iphone-15-pro/">Learn more &gt;</a>
+            <a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro">Buy &gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="part-1 part-4-2">
+        <div class="text-part-1 text-part-3">
+          <h1>iPhone 15 Pro</h1>
+          <p>Titanium. So Strong. So Light. So Pro.</p>
+          <div class="link">
+            <a href="https://www.apple.com/iphone-15-pro/">Learn more &gt;</a>
+            <a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro">Buy &gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part-4">
+      <div class="part-1 part-4-1">
+        <div class="text-part-1 text-part-3">
+          <h1>iPhone 15 Pro</h1>
+          <p>Titanium. So Strong. So Light. So Pro.</p>
+          <div class="link">
+            <a href="https://www.apple.com/iphone-15-pro/">Learn more &gt;</a>
+            <a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro">Buy &gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="part-1 part-4-2">
+        <div class="text-part-1 text-part-3">
+          <h1>iPhone 15 Pro</h1>
+          <p>Titanium. So Strong. So Light. So Pro.</p>
+          <div class="link">
+            <a href="https://www.apple.com/iphone-15-pro/">Learn more &gt;</a>
+            <a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro">Buy &gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-part">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-1"></div>
+          <div class="swiper-slide swiper-2"></div>
+          <div class="swiper-slide swiper-3"></div>
+          <div class="swiper-slide swiper-4"></div>
+          <div class="swiper-slide swiper-5"></div>
+          <div class="swiper-slide swiper-6"></div>
+          <div class="swiper-slide swiper-7"></div>
+          <div class="swiper-slide swiper-8"></div>
+          <div class="swiper-slide swiper-9"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

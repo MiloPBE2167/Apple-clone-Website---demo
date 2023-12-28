@@ -13,7 +13,9 @@ html, body {
   height: 100%;
   width: 100%;
 }
-
+body {
+  padding-top: 6vh;
+}
 .main {
   width: 100%;
   min-height: 100vh;
@@ -23,13 +25,16 @@ html, body {
 
 /*____________________*/
 nav {
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2vw;
   width: 100%;
-  height: 5vh;
-  background-color: whitesmoke;
+  height: 6vh;
+  background-color: darkgrey;
+  z-index: 50;
 }
 
 nav a {
@@ -40,12 +45,77 @@ nav a {
 nav i {
   font-size: 1.17vw;
 }
+
+.main .thongtin > *{
+  display: grid;
+  grid-template-columns: 1.8fr 1.2fr 1fr;
+  height: 400px;
+  width: 100%;
+  background-color: #eeebeb;
+  position:fixed;
+  top: 50px;
+  overflow: hidden;
+  z-index: 1;
+  padding: 50px 200px 0 170px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.671) 0px 8px 600px -8px;
+  display:none;
+  transition: all 0.3s ease;
+}
+
+.main .thongtin .thongtinbottom {
+  height: 550px;
+  display:none;
+}
+
+.main .thongtin .column1{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main .thongtin .column2{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.main .thongtin .column3{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.main .thongtin h4{
+  font-size: 12px;
+  color: #b4b4b4;
+}
+.main .thongtin h1{
+  font-size: 35px;
+  color: #131212;
+  font-weight: 500;
+}
+.main .thongtin h2{
+  font-size: 18px;
+  color: #131212;
+  font-weight: 400;
+}
+.main .thongtin h3{
+  font-size: 16px;
+  color: #131212;
+  font-weight: 300;
+}
 /*____________________*/
 
 
 
+.ri-menu-fill {
+  display: none;
+}
+.respo-nav {
+  display:none;
+}
+
+
+
 /*____________________*/
-.main-product {
+.part-1 {
   position: relative;
   display: flex;
   align-items: center;
@@ -55,7 +125,7 @@ nav i {
   background-position: center;
   margin-bottom: 1vh;
 }
-.text-main-product {
+.text-part-1 {
   top: 7%;
   display: flex;
   align-items: center;
@@ -65,10 +135,10 @@ nav i {
   gap: 1vh;
   margin-bottom: 0.5vh;
 }
-.text-main-product h1 {
+.text-part-1 h1 {
   font-size: 3vw;
 }
-.text-main-product p {
+.text-part-1 p {
   font-size: 1.6vw;
 }
 .link {
@@ -100,3 +170,191 @@ nav i {
   color:rgb(0, 0, 0);
 }
 /*____________________*/
+
+
+
+/*____________________*/
+.part-4 {
+  display: flex;
+  width: 100%;
+  gap: 0.5vw;
+}
+.part-4-1{
+  height: 60vh;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-image: url(assets/4-1.jpg);
+}
+.part-4-2{
+  height: 60vh;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-image: url(Assets/4-2.jpg);
+}
+.part-4 .text-part-1 h1 {
+  font-size: 2.5vw;
+}
+.part-4 .text-part-1 p {
+  font-size: 1.2vw;
+}
+.text-part-3 {
+  color: rgba(0,0,0);
+}
+/*____________________*/
+
+
+
+/*____________________*/
+.slider-part {
+  padding: 1vh 0;
+  width: 100%;
+  height: 70vh;
+  /* background-color: rgba(0, 0, 0); */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 69%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* 
+.swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 20%;
+} */
+
+.swiper-1 {
+  background-image: url(assets/1378x774\ \(1\).jpg);
+}
+.swiper-2 {
+  background-image: url(assets/1378x774\ \(2\).jpg);
+}
+.swiper-3 {
+  background-image: url(assets/1378x774\ \(3\).jpg);
+}
+.swiper-4 {
+  background-image: url(assets/1378x774\ \(4\).jpg);
+}
+.swiper-5 {
+  background-image: url(assets/1378x774\ \(5\).jpg);
+}
+.swiper-6 {
+  background-image: url(assets/1378x774\ \(6\).jpg);
+}
+.swiper-7 {
+  background-image: url(assets/1378x774\ \(7\).jpg);
+}
+.swiper-8 {
+  background-image: url(assets/1378x774\ \(8\).jpg);
+}
+.swiper-9 {
+  background-image: url(assets/1378x774\ \(9\).jpg);
+}
+/*____________________*/
+
+
+
+@media (max-width: 833px) {
+  /* TOP-NAV BAR responsive */
+  nav a {
+    display: none;
+  }
+  .respo-nav {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    top: -100%;
+    gap: 2vh;
+    width: 100%;
+    height: 100vh;
+    background-color: #161617;
+    padding: 10vh 10vw;
+    z-index: 99;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    /* transition: all 0.3s ease; */
+  }
+  .respo-nav a {
+    font-size: 7vw;
+    text-decoration: none;
+    color: white;
+  }
+  .respo-nav svg {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+  }
+  nav i {
+    font-size: 6vw;
+  }
+  .ri-apple-fill {
+    margin-right: 63vw;
+  }
+  .ri-menu-fill {
+    display: initial;
+  }
+
+  /* MAIN PRODUCT responsive */
+  /* text.part-1 {
+    gap: 2vh;
+  } */
+  .text-part-1 h1 {
+    font-size: 9vw;
+  }
+  .text-part-1 p {
+    font-size: 5vw;
+  }
+  .link a {
+    font-size: 4.5vw;
+  }
+
+
+  #partO {
+    background-image: url(assets/responsive/hero_iphone15pro__i70z9oz3hj2i_small_2x.jpg);
+  }
+  .part-2 {
+    background-image: url(assets/responsive/hero_iphone15_announce__uuemlcwczn6u_small_2x.jpg);
+  }
+
+  .part-4 {
+    flex-direction: column;
+  }
+  .part-4 .part-1 {
+    width: 100%;
+  }
+  .part-4 .text-part-1 h1 {
+    font-size: 7vw;
+  }
+  .part-4 .text-part-1 p {
+    font-size: 5.5vw;
+  }
+  
+  
+  /* .slider-part {
+    display: none;
+  } */
+}

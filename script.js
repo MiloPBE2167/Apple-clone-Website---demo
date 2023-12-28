@@ -32,8 +32,6 @@ close.addEventListener('click', () => {
   respoNav.style.top = "-100%";
 })
 
-// var store = document.querySelector("#store");
-// var subMeny = document.querySelector(".submenu");
 
 const thongtin = document.querySelectorAll('.main .thongtin .thongtinbottom');
 const thongtintop = document.querySelectorAll('.main .top .thongtintop');

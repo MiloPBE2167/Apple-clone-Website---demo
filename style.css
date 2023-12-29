@@ -105,6 +105,11 @@ nav i {
   font-weight: 300;
 }
 
+/* VIDEO */
+.back-video video{
+  width: 100%;
+}
+
 
 /*MAIN PRODUCTS*/
 .part-1 {
